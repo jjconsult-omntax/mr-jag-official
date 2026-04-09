@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Mr. JAG Official — Finance education, market analysis, stock picks, and investing strategies. Learn to invest with confidence.">
+<title>Mr. JAG Official — Learn. Invest. Grow.</title>
+<link rel="canonical" href="https://www.mrjagofficial.com">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mrjagofficial.com">
+<meta property="og:title" content="Mr. JAG Official — Learn. Invest. Grow.">
+<meta property="og:description" content="Finance education, market analysis, and investing strategies for every level.">
+<meta property="og:image" content="https://www.mrjagofficial.com/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Mr_JAG_Official">
+<meta name="twitter:title" content="Mr. JAG Official — Learn. Invest. Grow.">
+<meta name="twitter:description" content="Finance education, market analysis, and investing strategies for every level.">
+<meta name="twitter:image" content="https://www.mrjagofficial.com/og-image.jpg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Minimal structured data for site (adjust per page for articles/videos) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Mr. JAG Official","url":"https://www.mrjagofficial.com","potentialAction":{"@type":"SearchAction","target":"https://www.mrjagofficial.com/?s={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+
+<script>
+  // Prevent Flash of Unstyled Content — runs before body renders
+  (function(){var t=localStorage.getItem('jag-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="sr-only focusable">Skip to content</a>
+
+<div class="ticker-bar" role="region" aria-label="Live stock prices" aria-live="polite" aria-atomic="false">
+  <div class="ticker-track" id="ticker-track">
+    <span class="ticker-loading">Loading market data…</span>
+  </div>
+</div>
+
+<header role="banner">
+  <nav class="nav" aria-label="Main navigation">
+    <a href="https://www.mrjagofficial.com" class="nav-logo">
+      <img src="logo.png" alt="Mr. JAG Official logo" class="logo-icon" width="36" height="36">
+      Mr. JAG
+    </a>
+    <button class="btn-icon nav-toggle" aria-label="Open navigation menu" aria-expanded="false" id="nav-toggle">☰</button>
+    <div class="nav-links" id="nav-links" role="menubar">
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">✕ Close menu</button>
+      <a href="#" role="menuitem" aria-current="page">Home</a>
+      <a href="#" role="menuitem">Market Analysis</a>
+      <a href="#" role="menuitem">Investing 101</a>
+      <a href="#" role="menuitem">Stock Picks</a>
+      <a href="#" role="menuitem">Portfolio Strategy</a>
+      <a href="#" role="menuitem">Crypto</a>
+      <a href="https://www.youtube.com/@Mr_JAG_Official" role="menuitem" target="_blank" rel="noopener">Videos</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-icon" aria-label="Search articles and videos (Ctrl+K)" id="search-btn">⌕</button>
+      <button class="btn-icon" aria-label="Toggle light and dark mode" id="theme-toggle">
+        <span class="theme-toggle">
+          <span class="icon-sun" aria-hidden="true">☀</span>
+          <span class="icon-moon" aria-hidden="true">☾</span>
+        </span>
+      </button>
+      <a href="https://www.youtube.com/@Mr_JAG_Official" target="_blank" rel="noopener">
+        <button class="btn-subscribe" aria-label="Subscribe on YouTube">Subscribe</button>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Search" aria-modal="true">
+  <div class="search-container">
+    <div class="search-box">
+      <input type="search" id="search-input" placeholder="Search articles, videos, topics…" autocomplete="off" aria-label="Search">
+      <span class="search-hint">ESC</span>
+      <button class="search-close" aria-label="Close search" id="search-close">✕</button>
+    </div>
+    <div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
+    <div class="sr-only" id="search-announcer" aria-live="polite"></div>
+  </div>
+</div>
+
+<div class="cat-bar" role="tablist" aria-label="Content categories">
+  <button class="cat-tab" role="tab" aria-selected="true" data-category="all">Top Stories</button>
+  <button class="cat-tab" role="tab" aria-selected="false" data-category="earnings">Earnings</button>
+  <button class="cat-tab" role="tab" aria-selected="false" data-category="macro">Macro</button>
+  <button class="cat-tab" role="tab" aria-selected="false" data-category="etfs">ETFs</button>
+  <button class="cat-tab" role="tab" aria-selected="false" data-category="dividends">Dividends</button>
+  <button class="cat-tab" role="tab" aria-selected="false" data-category="strategy">Strategy</button>
+  <button class="cat-tab" role="tab" aria-selected="false" data-category="crypto">Crypto</button>
+  <button class="cat-tab" role="tab" aria-selected="false" data-category="retirement">Retirement</button>
+</div>
+
+<div class="main-grid">
+  <main id="main-content">
+    <div class="content-col">
+      <h1 class="sr-only">Mr. JAG Official — Learn. Invest. Grow.</h1>
+
+      <section class="featured" aria-label="Featured articles">
+        <article class="featured-main" data-category="all macro" data-search="sp500 rally market analysis bull run stocks">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&h=450&fit=crop&fm=webp" alt="Stock market trading screen showing green candlestick charts and rising indices" loading="eager" decoding="async">
+          <div class="featured-overlay">
+            <span class="tag">Market Analysis</span>
+            <h2>Why the S&P 500 Rally Has More Room to Run — And What Could Stop It</h2>
+            <p class="meta"><time datetime="2026-04-08">2 hours ago</time> · 14 min read</p>
+          </div>
+        </article>
+        <div class="featured-side">
+          <article class="featured-card" data-category="all macro" data-search="fed rate cuts interest rates federal reserve history monetary policy">
+            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=220&fit=crop&fm=webp" alt="Federal Reserve building facade with marble columns" loading="eager" decoding="async">
+            <div class="featured-overlay">
+              <span class="tag">Macro</span>
+              <h2>Fed Rate Cuts: What History Tells Us About What Comes Next</h2>
+            </div>
+          </article>
+          <article class="featured-card" data-category="all crypto" data-search="bitcoin halving 2025 btc crypto investor guide">
+            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=220&fit=crop&fm=webp" alt="Gold Bitcoin coin sitting on reflective dark surface" loading="eager" decoding="async">
+            <div class="featured-overlay">
+              <span class="tag">Crypto</span>
+              <h2>Bitcoin Halving 2025: A Complete Investor's Guide</h2>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-label="Latest videos">
+        <h2 class="section-title">Latest Videos <a href="https://www.youtube.com/@Mr_JAG_Official" target="_blank" rel="noopener" class="see-all">View All →</a></h2>
+        <div class="video-grid">
+          <article class="video-card" data-category="all strategy" data-search="stock analysis walkthrough how to analyze fundamental">
+            <div class="video-thumb">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=225&fit=crop&fm=webp" alt="Laptop displaying stock analysis dashboard with financial charts and data" loading="lazy" decoding="async">
+              <div class="play-btn" aria-hidden="true"></div>
+              <span class="video-duration" aria-label="Duration: 18 minutes 42 seconds">18:42</span>
+            </div>
+            <div class="video-card-info">
+              <h3>How I Analyze a Stock in Under 10 Minutes (Full Walkthrough)</h3>
+              <p class="meta">42K views · <time datetime="2026-04-05">3 days ago</time></p>
+            </div>
+          </article>
+          <article class="video-card" data-category="all etfs" data-search="etf portfolio only three etfs you need index fund vanguard">
+            <div class="video-thumb">
+              <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=225&fit=crop&fm=webp" alt="Person reviewing ETF portfolio performance on tablet screen" loading="lazy" decoding="async">
+              <div class="play-btn" aria-hidden="true"></div>
+              <span class="video-duration" aria-label="Duration: 24 minutes 15 seconds">24:15</span>
+            </div>
+            <div class="video-card-info">
+              <h3>The Only 3 ETFs You Need in Your Portfolio (Backed by Data)</h3>
+              <p class="meta">89K views · <time datetime="2026-04-01">1 week ago</time></p>
+            </div>
+          </article>
+          <article class="video-card" data-category="all dividends" data-search="dividend investing masterclass passive income yield">
+            <div class="video-thumb">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=225&fit=crop&fm=webp" alt="Financial dashboard showing dividend yield charts and income graphs" loading="lazy" decoding="async">
+              <div class="play-btn" aria-hidden="true"></div>
+              <span class="video-duration" aria-label="Duration: 31 minutes 8 seconds">31:08</span>
+            </div>
+            <div class="video-card-info">
+              <h3>Dividend Investing Masterclass: Building $5K/Year in Passive Income</h3>
+              <p class="meta">125K views · <time datetime="2026-03-25">2 weeks ago</time></p>
+            </div>
+          </article>
+          <article class="video-card" data-category="all strategy" data-search="warren buffett 2025 portfolio berkshire hathaway changes">
+            <div class="video-thumb">
+              <img src="https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=400&h=225&fit=crop&fm=webp" alt="Financial documents showing portfolio allocation changes" loading="lazy" decoding="async">
+              <div class="play-btn" aria-hidden="true"></div>
+              <span class="video-duration" aria-label="Duration: 15 minutes 33 seconds">15:33</span>
+            </div>
+            <div class="video-card-info">
+              <h3>Warren Buffett's 2025 Portfolio Changes Explained</h3>
+              <p class="meta">203K views · <time datetime="2026-04-03">5 days ago</time></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-label="Analysis and education articles">
+        <h2 class="section-title">Analysis &amp; Education <span class="see-all">View All →</span></h2>
+        <div class="article-list">
+          <article class="article-row" data-category="all strategy" data-search="pe ratio price earnings valuation metric investing 101 beginner">
+            <div class="article-thumb"><img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=300&h=200&fit=crop&fm=webp" alt="Closeup of P/E ratio calculation on a financial spreadsheet" loading="lazy" decoding="async"></div>
+            <div class="article-info">
+              <span class="tag">Investing 101</span>
+              <h3>P/E Ratios Explained: Why This One Metric Can Make or Break Your Picks</h3>
+              <p>Understanding price-to-earnings ratios is foundational. We break down forward vs. trailing P/E, sector comparisons, and when a "high" P/E is actually justified.</p>
+              <p class="meta">By Mr. JAG <span class="dot" aria-hidden="true"></span> 8 min read <span class="dot" aria-hidden="true"></span> <time datetime="2026-04-06">Apr 6</time></p>
+            </div>
+          </article>
+          <article class="article-row" data-category="all earnings" data-search="nvidia nvda earnings preview data center revenue wall street">
+            <div class="article-thumb"><img src="https://images.unsplash.com/photo-1620228885847-9eab2a1adddc?w=300&h=200&fit=crop&fm=webp" alt="NVIDIA corporate headquarters building exterior at dusk" loading="lazy" decoding="async"></div>
+            <div class="article-info">
+              <span class="tag">Earnings</span>
+              <h3>Nvidia's Earnings Preview: 5 Key Numbers Wall Street Is Watching</h3>
+              <p>With data center revenue expected to surge 40% YoY, here's exactly what analysts are focused on ahead of next week's report.</p>
+              <p class="meta">By Mr. JAG <span class="dot" aria-hidden="true"></span> 11 min read <span class="dot" aria-hidden="true"></span> <time datetime="2026-04-05">Apr 5</time></p>
+            </div>
+          </article>
+          <article class="article-row" data-category="all strategy" data-search="dollar cost averaging dca lump sum simulation monte carlo investing strategy">
+            <div class="article-thumb"><img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=300&h=200&fit=crop&fm=webp" alt="Graph comparing dollar-cost averaging versus lump sum investing returns" loading="lazy" decoding="async"></div>
+            <div class="article-info">
+              <span class="tag">Strategy</span>
+              <h3>Dollar-Cost Averaging vs. Lump Sum: We Ran 10,000 Simulations</h3>
+              <p>The age-old debate settled with Monte Carlo analysis across 50 years of market data. The results might surprise you.</p>
+              <p class="meta">By Mr. JAG <span class="dot" aria-hidden="true"></span> 15 min read <span class="dot" aria-hidden="true"></span> <time datetime="2026-04-04">Apr 4</time></p>
+            </div>
+          </article>
+          <article class="article-row" data-category="all dividends" data-search="dividend aristocrats under 50 portfolio income yield growth">
+            <div class="article-thumb"><img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=300&h=200&fit=crop&fm=webp" alt="Stack of US dollar bills representing dividend income payments" loading="lazy" decoding="async"></div>
+            <div class="article-info">
+              <span class="tag">Dividends</span>
+              <h3>7 Dividend Aristocrats Under $50 That Belong in Every Portfolio</h3>
+              <p>Reliable, growing payouts from companies with 25+ years of consecutive dividend increases—all at an accessible price point.</p>
+              <p class="meta">By Mr. JAG <span class="dot" aria-hidden="true"></span> 10 min read <span class="dot" aria-hidden="true"></span> <time datetime="2026-04-03">Apr 3</time></p>
+            </div>
+          </article>
+          <article class="article-row" data-category="all crypto" data-search="ethereum eth roadmap merge sharding scaling institutions smart money">
+            <div class="article-thumb"><img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=300&h=200&fit=crop&fm=webp" alt="Ethereum logo hologram floating above a digital circuit board" loading="lazy" decoding="async"></div>
+            <div class="article-info">
+              <span class="tag">Crypto</span>
+              <h3>Ethereum's Roadmap After the Merge: What Smart Money Is Betting On</h3>
+              <p>Sharding, proto-danksharding, and the path to 100K TPS—here's how Ethereum plans to scale and why institutions are paying attention.</p>
+              <p class="meta">By Mr. JAG <span class="dot" aria-hidden="true"></span> 13 min read <span class="dot" aria-hidden="true"></span> <time datetime="2026-04-02">Apr 2</time></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <aside class="sidebar-col" aria-label="Sidebar">
+    <div class="sidebar-widget cta-widget">
+      <div class="yt-icon" aria-hidden="true">▶</div>
+      <h3>Watch on YouTube</h3>
+      <p>Weekly deep dives on market analysis, stock picks, and investing education for every level.</p>
+      <a href="https://www.youtube.com/@Mr_JAG_Official" target="_blank" rel="noopener"><button class="cta-btn">★ Subscribe Now</button></a>
+      <div class="sub-count">247K subscribers · 380+ videos</div>
+    </div>
+    <div class="sidebar-widget" aria-label="Market movers">
+      <h3 class="widget-title">Market Movers</h3>
+      <div id="market-movers-list"><div class="loading-placeholder">Loading live data…</div></div>
+    </div>
+    <div class="sidebar-widget" aria-label="Trending articles">
+      <h3 class="widget-title">Trending Now</h3>
+      <div class="trending-item"><span class="trending-num" aria-hidden="true">01</span><div class="trending-text"><h4>The Magnificent 7 Stocks: Are They Still Worth Buying?</h4><p class="meta">18.4K reads · Trending</p></div></div>
+      <div class="trending-item"><span class="trending-num" aria-hidden="true">02</span><div class="trending-text"><h4>How to Read a Balance Sheet in 5 Minutes</h4><p class="meta">12.1K reads · Investing 101</p></div></div>
+      <div class="trending-item"><span class="trending-num" aria-hidden="true">03</span><div class="trending-text"><h4>Treasury Yields Are Flashing a Warning — Here's What It Means</h4><p class="meta">9.8K reads · Macro</p></div></div>
+      <div class="trending-item"><span class="trending-num" aria-hidden="true">04</span><div class="trending-text"><h4>My Roth IRA Strategy at Every Age (20s, 30s, 40s, 50s)</h4><p class="meta">8.2K reads · Retirement</p></div></div>
+      <div class="trending-item"><span class="trending-num" aria-hidden="true">05</span><div class="trending-text"><h4>Small Cap Stocks Are Quietly Outperforming — 3 Hidden Gems</h4><p class="meta">6.5K reads · Stock Picks</p></div></div>
+    </div>
+    <div class="sidebar-widget" aria-label="Newsletter signup">
+      <h3 class="widget-title">Weekly Market Brief</h3>
+      <p style="font-size:13px;color:var(--text-secondary);line-height:1.5;">Get our top analysis, stock picks, and market insights delivered every Sunday morning. Free.</p>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" placeholder="your@email.com" required aria-describedby="newsletter-status">
+        <button type="submit" id="nl-btn">Join</button>
+      </form>
+      <p class="newsletter-msg" id="newsletter-status" aria-live="polite"></p>
+      <p style="font-size:11px;color:var(--text-muted);margin-top:4px;">32,000+ investors already subscribed</p>
+    </div>
+  </aside>
+</div>
+
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="https://www.mrjagofficial.com" class="nav-logo">
+        <img src="logo.png" alt="Mr. JAG Official logo" class="logo-icon" width="36" height="36">
+        Mr. JAG
+      </a>
+      <p>Empowering everyday investors with data-driven education, honest analysis, and actionable strategies.</p>
+    </div>
+    <div class="footer-col"><h4>Content</h4><a href="#">Market Analysis</a><a href="#">Investing 101</a><a href="#">Stock Picks</a><a href="#">Portfolio Strategy</a><a href="#">Crypto Corner</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="#">Free Courses</a><a href="#">Stock Screener</a><a href="#">Dividend Calculator</a><a href="#">Watchlist Tool</a><a href="#">Glossary</a></div>
+    <div class="footer-col"><h4>Connect</h4>
+      <a href="https://www.youtube.com/@Mr_JAG_Official" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://x.com/Mr_JAG_Official" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://www.facebook.com/profile.php?id=61580777505551" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/mr.jag.official/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Mr. JAG Official — www.mrjagofficial.com. All rights reserved.</span>
+    <span>Privacy Policy · Terms · Disclaimer: Not financial advice.</span>
+  </div>
+</footer>
+
+
+
+})();
+<script src="main.js" defer></script>
+</body>
+</html>
