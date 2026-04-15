@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Mr. JAG Official</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #0a0a0a; color: #f0f0f0;
+  }
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid #1e1e1e;
+    padding: 16px 0;
+  }
+  .nav-inner {
+    max-width: 800px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px; color: #f0f0f0; text-decoration: none;
+  }
+  .nav-links a {
+    color: #999; text-decoration: none;
+    margin-left: 24px; font-size: 14px;
+  }
+  .container {
+    max-width: 800px; margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px; margin-bottom: 40px;
+  }
+  .post-card {
+    display: flex; align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #1e1e1e;
+    text-decoration: none; color: #f0f0f0;
+    transition: background 0.2s;
+  }
+  .post-card:hover { background: #111; margin: 0 -16px; padding: 20px 16px; border-radius: 8px; }
+  .post-date { color: #555; font-size: 14px; min-width: 140px; }
+  .post-title { flex: 1; font-weight: 500; }
+  .post-arrow { color: #555; font-size: 18px; }
+  .empty { color: #555; font-style: italic; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Mr. JAG</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h1>Blog</h1>
+  
+    <a href="/blog/2026-04-15-selling-puts-is-not-just-collecting-premium-it-s-regime-depe.html" class="post-card">
+      <span class="post-date">April 15, 2026</span>
+      <span class="post-title">Selling Puts Is Not Just Collecting Premium — It's Regime-Dependent</span>
+      <span class="post-arrow">&rarr;</span>
+    </a>
+    <a href="/blog/2026-04-13-gli-regime-shift-incoming-the-calm-before-the-speculation-st.html" class="post-card">
+      <span class="post-date">April 13, 2026</span>
+      <span class="post-title">GLI Regime Shift Incoming: The Calm Before the Speculation Storm</span>
+      <span class="post-arrow">&rarr;</span>
+    </a>
+</div>
+</body>
+</html>

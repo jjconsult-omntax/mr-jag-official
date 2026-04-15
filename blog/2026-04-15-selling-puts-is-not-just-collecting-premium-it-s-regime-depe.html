@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selling Puts Is Not Just Collecting Premium — It's Regime-Dependent — Mr. JAG Official</title>
+<meta name="description" content="Selling Puts Is Not Just Collecting Premium — It's Regime-Dependent">
+<meta property="og:title" content="Selling Puts Is Not Just Collecting Premium — It's Regime-Dependent — Mr. JAG Official">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Mr_JAG_Official">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a0a0a;
+    --bg-card: #111;
+    --bg-surface: #161616;
+    --text-primary: #f0f0f0;
+    --text-secondary: #999;
+    --text-muted: #555;
+    --border: #1e1e1e;
+    --border-light: #2a2a2a;
+    --accent: #fff;
+    --gain: #22c55e;
+    --loss: #ef4444;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+  }
+  .nav-inner {
+    max-width: 800px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px; color: var(--text-primary);
+    text-decoration: none;
+  }
+  .nav-links a {
+    color: var(--text-secondary); text-decoration: none;
+    margin-left: 24px; font-size: 14px; font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--text-primary); }
+  article {
+    max-width: 800px; margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+  .post-meta {
+    color: var(--text-muted); font-size: 14px;
+    margin-bottom: 8px; font-weight: 500;
+    letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  article h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.2; margin-bottom: 20px;
+    color: var(--text-primary);
+  }
+  .tags { margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    padding: 4px 12px; border-radius: 4px;
+    font-size: 12px; font-weight: 500;
+  }
+  article h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px; margin: 48px 0 16px;
+    color: var(--text-primary);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  article h3 {
+    font-size: 20px; font-weight: 600;
+    margin: 32px 0 12px; color: var(--text-primary);
+  }
+  article p {
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+  }
+  article strong { color: var(--text-primary); }
+  article em { color: var(--text-secondary); font-style: italic; }
+  article a { color: var(--accent); text-decoration: underline; }
+  article ul, article ol {
+    margin: 0 0 20px 24px;
+    color: var(--text-secondary);
+  }
+  article li { margin-bottom: 8px; }
+  article hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+  article pre {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 24px 0;
+  }
+  article code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+  }
+  article p code {
+    background: var(--bg-surface);
+    padding: 2px 6px; border-radius: 4px;
+    font-size: 15px;
+  }
+  .post-nav {
+    display: flex; justify-content: space-between;
+    margin-top: 60px; padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .post-nav-link {
+    color: var(--text-secondary);
+    text-decoration: none; font-size: 14px;
+  }
+  .post-nav-link:hover { color: var(--text-primary); }
+  .disclaimer {
+    margin-top: 60px; padding: 20px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 13px; color: var(--text-muted);
+    line-height: 1.6;
+  }
+  @media (max-width: 600px) {
+    article { padding: 40px 16px 80px; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Mr. JAG</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <div class="post-meta">April 15, 2026 · Mr. JAG · Education</div>
+  <h1>Selling Puts Is Not Just Collecting Premium — It's Regime-Dependent</h1>
+  <div class="tags"><span class="tag">options trading</span><span class="tag">selling puts</span><span class="tag">cash secured puts</span><span class="tag">VIX</span><span class="tag">GEX</span><span class="tag">options strategy</span></div>
+  <h1>Selling Puts Is Not Just Collecting Premium — It's Regime-Dependent</h1>
+
+<p>Most retail traders learn about selling puts and immediately think: <em>free money</em>. Collect premium, stock doesn't drop, keep it all. Simple.</p>
+
+<p>It's not simple. And if you treat it like it is, a single wrong-regime trade will erase months of credits in a week.</p>
+
+<p>Let me show you exactly why — with today's live data as the classroom.</p>
+
+<hr>
+
+<h2>The Regime Is Everything</h2>
+
+<p>Selling puts is a <strong>short volatility, long delta</strong> strategy. That means it works <em>with</em> specific market conditions — and gets absolutely destroyed when those conditions reverse. You're not just betting a stock doesn't drop. You're betting that the entire environment stays cooperative.</p>
+
+<p>My pipeline runs a 9-signal risk monitor and maps everything against a Global Liquidity Index (GLI) built on Michael Howell's methodology. GLI is the macro overlay that tells you whether the plumbing of global capital markets is flowing or freezing. Here's where we sit today:</p>
+
+<h3>Signal Dashboard — April 15, 2026</h3>
+
+<p>| Signal | Reading | Status |</p>
+<p>|---|---|---|</p>
+<p>| VIX | 18.15 | 🟡 Elevated but stable |</p>
+<p>| Risk Level | 1 / 5 | 🟢 Low Risk |</p>
+<p>| Green Signals | 8 / 9 | 🟢 Strong |</p>
+<p>| Yellow Signals | 1 / 9 | 🟡 Monitor |</p>
+<p>| Red Signals | 0 / 9 | 🟢 Clear |</p>
+<p>| GEX | POSITIVE | 🟢 Dealer bid support |</p>
+<p>| SPY | $699.94 | 🟢 Price action stable |</p>
+<p>| GLI Value | 50.08 | 🟢 CALM regime |</p>
+<p>| GLI Next Regime | SPECULATION | 📈 ~2.4 months out |</p>
+
+<p>Eight of nine signals green. VIX at 18.15 — elevated enough to generate real premium, not so elevated that the market is in free-fall mode where put sellers get run over. GEX positive means options dealers are <em>long gamma</em>, which forces them to buy dips and sell rips — a mechanical dampener on volatility. This is a put-seller's environment.</p>
+
+<p>The GLI at 50.08 in a <strong>CALM regime</strong> with the next phase being <strong>SPECULATION</strong> in approximately 2.4 months? That's the macro current flowing in your direction. You're not fighting the tide.</p>
+
+<p>But here's what changes everything: if GLI was declining, GEX was negative, and VIX was spiking through 25 — the exact same trades would be landmines, not income.</p>
+
+<hr>
+
+<h2>How I Filter Trades: It's Never Just the Premium</h2>
+
+<p>Premium alone is noise. What I'm looking for is <strong>convergence</strong> — multiple independent data sources pointing at the same stock, at the same time, with structural support below the strike. Every open position below cleared a multi-layer filter:</p>
+
+<h3>Open Positions — April 15, 2026</h3>
+
+<p>| Symbol | Strike | Expiry | Credit | IV Pct | GEX Wall | Convergence Layer |</p>
+<p>|---|---|---|---|---|---|---|</p>
+<p>| MSFT | $355 | May 1 | $6.20 | 89th | $350 (16K OI) | +$11B GEX support |</p>
+<p>| CB | $310 | May 15 | $3.82 | 100th | 310/300/280 triple | Viking + Soros + Dalio |</p>
+<p>| DLR | $175 | May 15 | $2.70 | 100th | $170 (8× avg OI) | Citadel accumulation |</p>
+<p>| IBKR | $65 | May 15 | $1.27 | 100th | $72 (4.3K OI) | Citadel + director buying |</p>
+<p>| BKNG | $160 | May 15 | $3.55 | 89th | $160 (4.5K OI) | Soros + Dalio + TwoSigma + Ren |</p>
+
+<p>Notice CB and BKNG both hitting <strong>DOUBLE convergence</strong> — meaning two or more of my five institutional layers (insiders, whales, ETF flows, congressional disclosures, 13F positioning) are stacking at the same name at the same time. That's not a coincidence. That's institutional accumulation creating a floor.</p>
+
+<p>BKNG in particular: four separate quant/macro funds — Soros, Dalio, TwoSigma, Renaissance — all showing positioning signals simultaneously. I don't know why they're buying. I don't need to. The data says they are. I sell the put below their accumulation zone and let them defend it.</p>
+
+<p>IV percentile at 100th for three of five positions means we captured premium at the very top of each name's volatility distribution. You want to sell premium when IV is <em>high</em> relative to its own history — that's when you're paid the most for the risk you're taking. Selling puts at the 10th IV percentile is a different trade entirely. A worse one.</p>
+
+<hr>
+
+<h2>What This Means For Your Portfolio</h2>
+
+<p>The question isn't "should I sell puts?" The question is <strong>"am I in the right regime to sell puts?"</strong></p>
+
+<p>Use this framework before entering any short premium trade:</p>
+
+<p>1. <strong>GLI regime</strong>: Is global liquidity expanding or contracting? Contracting liquidity = elevated margin call risk = put sellers bleed.</p>
+<p>2. <strong>GEX</strong>: Positive GEX = dealers dampen moves. Negative GEX = dealers amplify moves. You want positive.</p>
+<p>3. <strong>VIX level and direction</strong>: 18-25 is the premium sweet spot — enough fear to pay you, not enough chaos to bury you. VIX <em>rising through</em> 25 is an exit signal, not an entry.</p>
+<p>4. <strong>Risk signal count</strong>: My 9-signal monitor at 8/9 green means broad market structure is intact. If that drops to 5/9 or below, position sizing shrinks — full stop.</p>
+<p>5. <strong>Convergence, not just premium</strong>: If you can't name <em>why</em> institutional money is near your strike, you don't have a trade. You have a lottery ticket.</p>
+
+<h3>Running Scorecard — 2026</h3>
+
+<p>| Metric | Value |</p>
+<p>|---|---|</p>
+<p>| Closed Trades | 9 |</p>
+<p>| Win Rate | 88.9% |</p>
+<p>| Realized P&L | $1,229 |</p>
+<p>| Open Premium | $1,881 |</p>
+<p>| Current Risk Level | 1 / 5 |</p>
+
+<p>88.9% win rate across 9 closed trades, $1,229 realized, $1,881 still working. Not because I pick stocks better than anyone else — because I only swing when the regime, the signals, and the institutional data are aligned. When they're not, I sit on my hands. That's the discipline.</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>A put-selling strategy with no regime filter is a car with no brakes. Works fine on flat roads. Devastating when the terrain changes.</p>
+
+<p>Right now, the terrain is cooperative: GLI calm, GEX positive, 8/9 signals green, VIX stable at 18.15, and two months of runway before the next regime shift. That's when you deploy capital, sell premium at high IV percentiles, and let dealer mechanics and institutional positioning defend your strikes.</p>
+
+<p>When the signals flip — and they will — the playbook changes. I'll tell you when that happens too.</p>
+
+<hr>
+
+<p>📺 <strong>Watch the full pipeline breakdown on YouTube</strong> → [youtube.com/@JAGofficial](https://youtube.com/@JAGofficial)  </p>
+<p>📲 <strong>Follow for daily signal updates</strong> → [@JAGofficial](https://twitter.com/JAGofficial)  </p>
+<p>💬 <strong>Join the community</strong> → [jagofficial.com](https://jagofficial.com)</p>
+
+<hr>
+
+<p>> <strong>Risk Disclaimer</strong>: This post is for educational purposes only and does not constitute financial advice. Options trading involves substantial risk of loss and is not appropriate for all investors. Past performance of any strategy or signal does not guarantee future results. Always conduct your own due diligence and consult a licensed financial professional before making investment decisions. Not financial advice.</p>
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> This content is for educational purposes only and does not constitute financial advice.
+    Options trading involves substantial risk. Past performance does not guarantee future results.
+    Full methodology at mrjagofficial.com.
+  </div>
+  <div class="post-nav"></div>
+</article>
+</body>
+</html>
